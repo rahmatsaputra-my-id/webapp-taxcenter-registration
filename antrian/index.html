@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Antrian Pendaftaran</title>
+<script type="text/javascript">
+	function awal()
+	{
+		a = 0;
+		document.getElementById('tampil_f1').value = a;
+	}
+	
+	function call_f1()
+	{
+		var b = document.getElementById('tampil_f1').value
+		var c = parseInt(b);	
+		
+		if(c == 0)
+		{
+			if(c == 0)
+			{
+			var hasil = c + 1;
+				document.getElementById('tampil_f1').value = hasil;
+			}
+		}else{
+			var hasil = c + 1;
+			document.getElementById('tampil_f1').value = hasil;
+		}
+		
+		
+	}
+	
+</script>
+</head>
+
+<body onload="awal()">
+<h1 align="center" style="color:#F90">NOMOR ANTRIAN</h1>
+<div align="center">
+	<div style="height:auto; margin-top:40px;">
+    	<div style="height:auto; float:center">
+        <table align="center">
+            <tr>
+        	<td><input type="text" id="tampil_f1" disabled="disabled" style="width:1080px; height:500px; background:#FFF; border:none; color:#000; text-align:center; vertical-align:middle; font-size:480px;" />
+</td>    
+            </tr>
+            <tr height="50">
+        	<td align="center"><button onclick="call_f1()">Selanjutnya</button></td>	    
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+<div align="center">
+<div style="width:750px; height:auto; color:#903; margin-top:40px"></div>
+</div>
+</body>
+</html>
